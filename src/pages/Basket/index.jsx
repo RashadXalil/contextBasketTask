@@ -21,7 +21,7 @@ const Index = () => {
           <th scope="col">Id</th>
           <th scope="col">Product</th>
           <th scope="col">Count</th>
-          <th scope="col">Total Price</th>
+          <th scope="col">Price(1 product)</th>
           <th scope="col">Remove</th>
         </tr>
       </thead>
@@ -29,7 +29,7 @@ const Index = () => {
         {basketItems &&
           basketItems.map((basketItem) => {
             return (
-              <tr>
+              <tr key={basketItem.id}>
                 <th scope="row">{basketItem.id}</th>
                 <td>{basketItem.name}</td>
                 <td>{basketItem.count}</td>

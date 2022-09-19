@@ -23,7 +23,6 @@ const Index = ({ product }) => {
       setBasketItems([...basketItems, basketItem])
       toast.success('item added to basket !')
     }
-    console.log(basketItems)
   }
   return (
     <React.Fragment>
